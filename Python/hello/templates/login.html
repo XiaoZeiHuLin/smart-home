@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#D1E9E9">
+<div class="container" align="center">
+    <h2 class="form-signin-heading" ><font color="#F75000" size="10">智慧养老行为感知系统</font></h2>
+    <hr size="5" color="blue"><br><br>
+    <form name="form" action="" method="post">
+        <font color="#2828FF" size="3">用户</font>
+        <input name="username" ><br><br>
+        <font color="#2828FF" size="3">密码</font>
+        <input type="password" name="userpassword" ><br><br>
+        <button type="submit" onclick="openLogin()">登录</button>
+        <button type="submit" onclick="openSignin()">注册</button>
+        <script type="text/javascript">
+            function openLogin(){
+                document.form.action="/login_submit";
+                document.form.submit();
+            }
+            function openSignin(){
+                document.form.action="/signin";
+                document.form.submit();
+            }
+        </script>
+    </form>
+</div>
+</body>
+</html>

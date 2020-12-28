@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container" align="center">
+        <h1><font color="#F75000" size="10">添加数据</font></h1>
+        <hr size="5" color="blue"><br>
+        <form name="form" action="" method="post">
+            <font color="#2828FF" size="3">编号</font>
+            <input type="text" name="userid" value="请输入编号"><br><br>
+            <font color="#2828FF" size="3">用户</font>
+            <input type="text" name="username" value="请输入用户名"><br><br>
+            <font color="#2828FF" size="3">状态</font>
+            <input type="text" name="status" value="请输入状态"><br><br>
+
+            <script type="text/javascript">
+                function add(){
+                    document.form.action="/add_submit";
+                    document.form.submit();
+                }
+            </script>
+            <button type="submit" onclick="add()">确认添加</button>
+        </form>
+    </div>
+</body>
+</html>

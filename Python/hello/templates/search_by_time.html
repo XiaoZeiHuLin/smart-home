@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container" align="center">
+        <h1><font color="#F75000" size="10">查找</font></h1>
+        <hr size="5" color="blue"><br>
+        <form name="form" action="" method="post">
+            <font color="#2828FF" size="3">时间</font>
+            <input type="text" name="time" >
+            <button type="submit" onclick="search_time()">开始查找</button><br><br>
+            <script type="text/javascript">
+                function search_time(){
+                    document.form.action="/search_time_submit";
+                    document.form.submit();
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container" align="center">
+        <h1><font color="#F75000" size="10">自动控制家居</font></h1>
+        <hr size="5" color="blue"><br>
+        <form name="form" action="" method="post">
+            <font color="#2828FF" size="3">自动模式</font>
+            <button type="submit" onclick="turn_on()">打开</button>
+            <button type="submit" onclick="turn_off()">关闭</button>
+            <script type="text/javascript">
+                function turn_on(){
+                    document.form.action="/automatic_mode_on";
+                    document.form.submit();
+                }
+                function turn_off(){
+                    document.form.action="/automatic_mode_off";
+                    document.form.submit();
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>

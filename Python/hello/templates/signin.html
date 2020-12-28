@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#F5FFE8">
+    <div class="container" align="center">
+        <h1><font color="#F75000" size="10">用户注册</font></h1>
+        <hr size="5" color="blue"><br>
+        <form name="form" action="" method="post">
+            <font color="#2828FF" size="3">用户</font>
+            <input type="text" name="username" value="请输入用户名"><br><br>
+            <font color="#2828FF" size="3">密码</font>
+            <input type="password" name="userpassword" value="请输入密码"><br><br>
+            <button type="submit" onclick="openSignin()">注册</button>
+            <script type="text/javascript">
+                function openSignin(){
+                    document.form.action="/signin_submit";
+                    document.form.submit();
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>

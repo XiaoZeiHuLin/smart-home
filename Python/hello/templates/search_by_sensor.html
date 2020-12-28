@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container" align="center">
+        <h1><font color="#F75000" size="10">查找</font></h1>
+        <hr size="5" color="blue"><br>
+        <form name="form" action="" method="post">
+
+            <font color="#2828FF" size="3">进出</font>
+            <input type="text" name="entrance" >
+            <button type="submit" onclick="search_entrance()">开始查找</button><br><br>
+
+            <font color="#2828FF" size="3">座位</font>
+            <input type="text" name="seat" >
+            <button type="submit" onclick="search_seat()">开始查找</button><br><br>
+
+            <font color="#2828FF" size="3">门窗</font>
+            <input type="text" name="window" >
+            <button type="submit" onclick="search_window()">开始查找</button><br><br>
+
+            <font color="#2828FF" size="3">水管</font>
+            <input type="text" name="pipe" >
+            <button type="submit" onclick="search_pipe()">开始查找</button><br><br>
+
+            <font color="#2828FF" size="3">光照</font>
+            <input type="text" name="light" >
+            <button type="submit" onclick="search_light()">开始查找</button><br><br>
+
+            <font color="#2828FF" size="3">温度</font>
+            <input type="text" name="temperature" >
+            <button type="submit" onclick="search_temperature()">开始查找</button><br><br>
+
+            <font color="#2828FF" size="3">湿度</font>
+            <input type="text" name="humidity" >
+            <button type="submit" onclick="search_humidity()">开始查找</button><br><br>
+
+            <font color="#2828FF" size="3">烟雾</font>
+            <input type="text" name="smoke" >
+            <button type="submit" onclick="search_smoke()">开始查找</button><br><br>
+
+            <font color="#2828FF" size="3">雨水</font>
+            <input type="text" name="water" >
+            <button type="submit" onclick="search_water()">开始查找</button><br><br>
+
+            <font color="#2828FF" size="3">火焰</font>
+            <input type="text" name="fire" >
+            <button type="submit" onclick="search_fire()">开始查找</button><br><br>
+
+            <font color="#2828FF" size="3">振动</font>
+            <input type="text" name="vibrate" >
+            <button type="submit" onclick="search_vibrate()">开始查找</button><br><br>
+
+            <script type="text/javascript">
+                function search_entrance(){
+                    document.form.action="/search_entrance_submit";
+                    document.form.submit();
+                }
+                function search_seat(){
+                    document.form.action="/search_seat_submit";
+                    document.form.submit();
+                }
+                function search_window(){
+                    document.form.action="/search_window_submit";
+                    document.form.submit();
+                }
+                function search_pipe(){
+                    document.form.action="/search_pipe_submit";
+                    document.form.submit();
+                }
+                function search_light(){
+                    document.form.action="/search_light_submit";
+                    document.form.submit();
+                }
+                function search_temperature(){
+                    document.form.action="/search_temperature_submit";
+                    document.form.submit();
+                }
+                function search_humidity(){
+                    document.form.action="/search_humidity_submit";
+                    document.form.submit();
+                }
+                function search_smoke(){
+                    document.form.action="/search_smoke_submit";
+                    document.form.submit();
+                }
+                function search_water(){
+                    document.form.action="/search_water_submit";
+                    document.form.submit();
+                }
+                function search_fire(){
+                    document.form.action="/search_fire_submit";
+                    document.form.submit();
+                }
+                function search_vibrate(){
+                    document.form.action="/search_vibrate_submit";
+                    document.form.submit();
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>

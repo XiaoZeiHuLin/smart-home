@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">老人即时救助</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="SiteMap">卫星地图</string>
+    <string name="Map">普通地图</string>
+    <string name="Location">定位</string>
+    <string name="Follow">跟随</string>
+    <string name="_3d">3D</string>
+    <string name="textview">TextView</string>
+    <string name="CityName">请输入目的城市:</string>
+    <string name="City">目的城市名:</string>
+    <string name="map">地图</string>
+    <string name="weather">天气</string>
+    <string name="info">信息</string>
+    <string name="space" />
+    <string name="Back">返回</string>
+</resources>

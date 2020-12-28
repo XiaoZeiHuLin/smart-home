@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container" align="center">
+    <h2 class="form-signin-heading" ><font color="#F75000" size="10">查询</font></h2>
+    <hr size="5" color="blue"><br><br>
+    <form name="form" action="" method="post">
+        <button type="button" onclick="search_by_sensor()">依据传感器查询</button><br><br>
+        <button type="button" onclick="search_by_time()">依据时间查询</button><br><br>
+        <button type="button" onclick="search_all()">全部查询</button><br><br>
+        <script type="text/javascript">
+            function search_by_sensor()
+            {
+                document.form.action="/search_by_sensor";
+                document.form.submit();
+            }
+            function search_by_time()
+            {
+                document.form.action="/search_by_time";
+                document.form.submit();
+            }
+            function search_all()
+            {
+                document.form.action="/search_all";
+                document.form.submit();
+            }
+        </script>
+    </form>
+</div>
+</body>
+</html>

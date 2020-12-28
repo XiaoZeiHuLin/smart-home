@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container" align="center">
+        <h1><font color="#F75000" size="10">家居控制</font></h1>
+        <hr size="5" color="blue"><br>
+        <form name="form" action="" method="post">
+            <font color="#2828FF" size="3">控制模式</font>
+            <button type="submit" onclick="automatic()">自动控制</button>
+            <button type="submit" onclick="manual()">手动控制</button>
+            <script type="text/javascript">
+                function automatic(){
+                    document.form.action="/automatic";
+                    document.form.submit();
+                }
+                function manual(){
+                    document.form.action="/manual";
+                    document.form.submit();
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>

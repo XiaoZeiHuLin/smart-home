@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container" align="center">
+    <h2 class="form-signin-heading" ><font color="#F75000" size="10">欢迎您，管理员</font></h2>
+    <hr size="5" color="blue"><br><br>
+    <form name="form" action="" method="post">
+        <button type="button" onclick="sensor()">开始检测</button><br><br>
+        <button type="button" onclick="search()">查看过往</button><br><br>
+        <button type="button" onclick="control_mode()">介入控制</button><br><br>
+        <button type="button" onclick="frequent_location_number()">常去地点</button><br><br>
+        <button type="button" onclick="action_forecast()">行为预测</button>
+        <script type="text/javascript">
+            function sensor()
+            {
+                document.form.action="/sensor";
+                document.form.submit();
+            }
+            function search()
+            {
+                document.form.action="/search";
+                document.form.submit();
+            }
+            function control_mode()
+            {
+                document.form.action="/control_mode";
+                document.form.submit();
+            }
+            function frequent_location_number()
+            {
+                document.form.action="/frequent_location_number";
+                document.form.submit();
+            }
+            function action_forecast()
+            {
+                document.form.action="/forecast";
+                document.form.submit();
+            }
+        </script>
+    </form>
+</div>
+</body>
+</html>

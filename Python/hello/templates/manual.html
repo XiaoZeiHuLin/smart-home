@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container" align="center">
+        <h1><font color="#F75000" size="10">手动控制家居</font></h1>
+        <hr size="5" color="blue"><br>
+        <form name="form" action="" method="post">
+            <font color="#2828FF" size="3">客厅大灯</font>
+            <button type="submit" onclick="turn_light_on_1()">打开</button>
+            <button type="submit" onclick="turn_light_off_1()">关闭</button>
+            <br><br>
+            <font color="#2828FF" size="3">厨房大灯</font>
+            <button type="submit" onclick="turn_light_on_2()">打开</button>
+            <button type="submit" onclick="turn_light_off_2()">关闭</button>
+            <br><br>
+            <font color="#2828FF" size="3">洗手间灯</font>
+            <button type="submit" onclick="turn_light_on_3()">打开</button>
+            <button type="submit" onclick="turn_light_off_3()">关闭</button>
+            <br><br>
+            <font color="#2828FF" size="3">窗</font>
+            <button type="submit" onclick="turn_window_on()">打开</button>
+            <button type="submit" onclick="turn_window_off()">关闭</button>
+            <script type="text/javascript">
+                function turn_light_on_1(){
+                    document.form.action="/turn_light_on_1";
+                    document.form.submit();
+                }
+                function turn_light_off_1(){
+                    document.form.action="/turn_light_off_1";
+                    document.form.submit();
+                }
+                function turn_light_on_2(){
+                    document.form.action="/turn_light_on_2";
+                    document.form.submit();
+                }
+                function turn_light_off_2(){
+                    document.form.action="/turn_light_off_2";
+                    document.form.submit();
+                }
+                function turn_light_on_3(){
+                    document.form.action="/turn_light_on_3";
+                    document.form.submit();
+                }
+                function turn_light_off_3(){
+                    document.form.action="/turn_light_off_3";
+                    document.form.submit();
+                }
+                function turn_window_on(){
+                    document.form.action="/turn_window_on";
+                    document.form.submit();
+                }
+                function turn_window_off(){
+                    document.form.action="/turn_window_off";
+                    document.form.submit();
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>

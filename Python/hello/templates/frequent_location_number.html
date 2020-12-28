@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container" align="center">
+        <h1><font color="#F75000" size="10">设置常去地点数</font></h1>
+        <hr size="5" color="blue"><br>
+        <form name="form" action="" method="post">
+            <font color="#2828FF" size="3">常去地点数</font>
+            <input type="text" name="frequent_location_number" >
+            <button type="submit" onclick="analyse_cluster()">开始查找</button><br><br>
+            <script type="text/javascript">
+                function analyse_cluster(){
+                    document.form.action="/analyse_cluster";
+                    document.form.submit();
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>
